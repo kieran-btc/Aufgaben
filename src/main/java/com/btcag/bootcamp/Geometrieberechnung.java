@@ -18,7 +18,7 @@ public class Geometrieberechnung {
             double ErgebnisKreis = ((radius * radius) * 3.14);
             System.out.println("Die Fläche vom Kreis beträgt " + ErgebnisKreis + " cm");
         }
-        else {
+        else if (form == 2) {
             System.out.println("Geben Sie die erste Seitenlänge vom Rechteck in cm ein: ");
             double seitenlänge1 = Seitenlänge1.nextDouble();
             System.out.println("Geben Sie die zweite Seitenlänge vom Rechteck in cm ein: ");
@@ -26,6 +26,9 @@ public class Geometrieberechnung {
             double ErgebnisRechteck = seitenlänge1 * seitenlänge2;
             System.out.println("Die Fläche vom Rechteck beträgt " + ErgebnisRechteck + " cm");
 
+        }
+        else {
+            System.out.println("Verarschen kann ich mich selber!");
         }
     }
 }
