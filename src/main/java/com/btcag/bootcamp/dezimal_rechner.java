@@ -9,6 +9,8 @@ public class dezimal_rechner {
         int dezimal = scanner.nextInt();
         String result = "";
 
+        System.out.println(result);
+
         while (dezimal > 0) {
             int resultModulo = dezimal % 2;
             result = resultModulo + result;
