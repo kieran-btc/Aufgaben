@@ -23,9 +23,9 @@ public class Fibonacci {
             zahl1 = zahl2;
             zahl2 = ergebnis1;
             p = ergebnis1;
-            while (p < (n++)) {
+            while (p <= n) {
                 System.out.print(ergebnis1 + " ");
-                p = n;
+                p = n + 1;
             }
         }
 
