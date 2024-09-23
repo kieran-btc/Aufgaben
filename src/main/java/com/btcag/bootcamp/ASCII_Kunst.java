@@ -16,6 +16,12 @@ public class ASCII_Kunst {
         auswahl = scan1.nextInt();
         System.out.println("Welche Größe soll das Objekt haben?");
         groesse = scan1.nextInt();
+        int statische_groesse = groesse;
+
+        while (auswahl < 1 || auswahl > 3) {
+            System.out.println("Ungültiges Objekt oder Größe. Bitte neustarten.");
+            break;
+        }
 
         while (auswahl == 1) {
             while (y <= groesse) {
@@ -49,17 +55,29 @@ public class ASCII_Kunst {
 
         x = 1;
         y = 1;
-        int tempy = y;
         while (auswahl == 3) {
-            while (x < groesse) {
-                while (tempy < groesse) {
+            while (x <= statische_groesse) {
+                while (y <= groesse) {
                     System.out.print("* ");
-                    tempy++;
+                    y++;
                 }
-                System.out.println("* ");
-                tempy = 1;
+                System.out.println();
+                y = 1;
+                groesse--;
                 x++;
             }
+            x = 0;
+            y = 0;
+            while (y < statische_groesse) {
+                while (x < y) {
+                    System.out.print("* ");
+                    x++;
+                }
+                System.out.println("* ");
+                y = y + 1;
+                x = 0;
+            }
+            auswahl = 4;
         }
     }
 }
