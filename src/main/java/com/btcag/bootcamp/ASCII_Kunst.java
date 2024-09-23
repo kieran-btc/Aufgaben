@@ -12,7 +12,7 @@ public class ASCII_Kunst {
         int x = 2;
         int y = 1;
 
-        System.out.println("Möchtest du einen Würfel (1) oder ein Dreieck (2) generieren lassen?");
+        System.out.println("Möchtest du einen Würfel (1), ein Dreieck (2) oder eine Sanduhr (3) generieren lassen?");
         auswahl = scan1.nextInt();
         System.out.println("Welche Größe soll das Objekt haben?");
         groesse = scan1.nextInt();
@@ -29,7 +29,7 @@ public class ASCII_Kunst {
                 y = y + 1;
 
             }
-            auswahl = 3;
+            auswahl = 4;
         }
 
         x = 0;
@@ -44,7 +44,11 @@ public class ASCII_Kunst {
                 y = y + 1;
                 x = 0;
             }
-            auswahl = 3;
+            auswahl = 4;
+        }
+
+        while (auswahl == 3) {
+
         }
     }
 }
