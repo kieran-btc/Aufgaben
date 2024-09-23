@@ -2,7 +2,7 @@ package com.btcag.bootcamp;
 
 import java.util.Scanner;
 
-public class ASCII_I {
+public class ASCII_Kunst {
     public static void main(String[] args) {
 
         Scanner scan1 = new Scanner(System.in);
