@@ -20,11 +20,11 @@ public class ASCII_I {
         while (auswahl == 1) {
             while (y <= groesse) {
                 while (x <= groesse) {
-                    System.out.print("*");
+                    System.out.print("* ");
                     x = x + 1;
                 }
                 x = 1;
-                System.out.println("*");
+                System.out.println("* ");
                 x = x + 1;
                 y = y + 1;
 
@@ -32,8 +32,20 @@ public class ASCII_I {
             auswahl = 3;
         }
 
+        x = 0;
+        y = 0;
         while (auswahl == 2) {
-
+            while (y < groesse) {
+                while (x < y) {
+                    System.out.print("* ");
+                    x++;
+                }
+                System.out.println("* ");
+                y = y + 1;
+                x = 0;
+            }
+            auswahl = 3;
         }
     }
 }
+
