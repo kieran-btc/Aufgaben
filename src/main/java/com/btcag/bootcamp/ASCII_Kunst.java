@@ -47,8 +47,19 @@ public class ASCII_Kunst {
             auswahl = 4;
         }
 
+        x = 1;
+        y = 1;
+        int tempy = y;
         while (auswahl == 3) {
-
+            while (x < groesse) {
+                while (tempy < groesse) {
+                    System.out.print("* ");
+                    tempy++;
+                }
+                System.out.println("* ");
+                tempy = 1;
+                x++;
+            }
         }
     }
 }
