@@ -1,4 +1,4 @@
-package com.btcag.bootcamp;
+package W01;
 
 import java.util.Scanner;
 

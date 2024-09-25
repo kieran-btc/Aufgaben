@@ -1,4 +1,4 @@
-package com.btcag.bootcamp;
+package W01;
 
 public class arithmetische_mittel {
     public static void main(String[] args) {
