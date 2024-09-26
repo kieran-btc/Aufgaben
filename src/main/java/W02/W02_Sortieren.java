@@ -1,4 +1,5 @@
 package W02;
+import java.util.Scanner;
 
 public class W02_Sortieren {
 
@@ -17,8 +18,16 @@ public class W02_Sortieren {
 
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
-        int[] intArray2 = {5, 7, 2, 9, 1, 8};
+        System.out.println("Wie viele Zahlen möchtest du sortieren?: ");
+        int n = scan.nextInt();
+
+        int[] intArray2 = new int[n];
+        System.out.println("Welche " + n + " Zahlen möchtest du sortieren?");
+        for (int i = 0; i < intArray2.length; i++) {
+            intArray2[i] = scan.nextInt();
+        }
 
         System.out.println("Der Array vor der Sortierung lautet: ");
         for (int t = 0; t < intArray2.length; t++) {
